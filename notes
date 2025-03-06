@@ -1,0 +1,9 @@
+to flash, try something like:
+
+get in bootloader mode by pressing the upper left key of the right side and the second to upper innermost key of the side
+
+when connected in bootloader mode, check the mount device by using dmesg which reports the device
+
+then flash with something like
+
+mkdir mnt && sudo mount /dev/sdc mnt && sudo cp firmware/*right-clique.uf2 mnt
